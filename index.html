@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="Demo">
+<head>
+	<meta charset="utf-8" />
+	<title>Services And Factories Are Instantiated On-Demand In AngularJS</title>
+	<style type="text/css">
+		a[ ng-click ] {
+			cursor: pointer;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body ng-controller="AppController">
+	<h1>Services And Factories Are Instantiated On-Demand In AngularJS</h1>
+	<p>
+		<a ng-click="toggleContainer()">Toggle Container</a>
+	</p>
+	<div ng-if="isShowingContainer">
+		<p ng-controller="SubController">Woot! Check out the logs, yo!</p>
+	</div>
+
+	<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
